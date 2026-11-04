@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Jeany Rose A. Calibuyot, a BSIT student and aspiring web developer.">
+  <title>Jeany Rose A. Calibuyot | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Jeany Rose home"><span>JR</span><b>.</b></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> BSIT STUDENT · ASPIRING WEB DEVELOPER</p>
+        <h1>Hello, I'm<br><span class="gradient-text">Jeany Rose</span><br>Calibuyot.</h1>
+        <p class="typed-line" aria-live="off">I'm into <span class="typed-text" id="typedText">web development</span><span class="cursor" aria-hidden="true">|</span></p>
+        <p class="hero-description">I’m a Bachelor of Science in Information Technology student who enjoys learning how websites and software are designed, built, and improved.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> Curious mind. Creative problem solver. Always learning.</div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Jeany Rose A. Calibuyot" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="photo-placeholder"><span>JR</span><small>Add your photo<br>as profile.jpg</small></div>
+        </div>
+        <div class="floating-tag tag-top"><span>✦</span> Learning by building</div>
+        <div class="floating-tag tag-bottom"><span>⌘</span> HTML · CSS · JS</div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / GET TO KNOW ME</p><h2>A little <span class="gradient-text">about me.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <p class="large-copy">I’m an IT student exploring the world of technology, one project at a time.</p>
+          <p>I enjoy turning ideas into simple, useful digital experiences. Through my coursework and personal projects, I continue developing my skills in programming, database concepts, and web development.</p>
+          <p>My goal is to become a skilled IT professional and keep growing through practice, curiosity, and collaboration.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact-card"><span class="fact-icon">⌁</span><div><small>COURSE</small><strong>Bachelor of Science in Information Technology</strong></div></div>
+          <div class="fact-card"><span class="fact-icon">◎</span><div><small>INTEREST</small><strong>Web development & software projects</strong></div></div>
+          <div class="fact-card"><span class="fact-icon">↗</span><div><small>CAREER GOAL</small><strong>To grow as an IT professional</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading"><p class="eyebrow">02 / WHAT I'M LEARNING</p><h2>My <span class="gradient-text">skills.</span></h2><p class="section-intro">Tools and technologies I have practiced through school activities and projects.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-symbol">5</span><h3>HTML</h3><p>Structuring web pages with semantic elements.</p></article>
+        <article class="skill-card"><span class="skill-symbol">✳</span><h3>CSS</h3><p>Styling layouts, responsive pages, and interfaces.</p></article>
+        <article class="skill-card"><span class="skill-symbol">Py</span><h3>Python</h3><p>Practicing programming fundamentals and OOP.</p></article>
+        <article class="skill-card"><span class="skill-symbol">C+</span><h3>C++</h3><p>Building logic and console-based applications.</p></article>
+        <article class="skill-card"><span class="skill-symbol">▤</span><h3>MySQL</h3><p>Working with relational databases and queries.</p></article>
+        <article class="skill-card"><span class="skill-symbol">⌘</span><h3>Git & VS Code</h3><p>Using development tools to manage and edit code.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects I've <span class="gradient-text">worked on.</span></h2><p class="section-intro">A selection of academic and personal projects. Add your screenshots and project links before submitting.</p></div>
+      <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-chip" type="button" data-filter="html" aria-pressed="false">HTML / CSS</button>
+        <button class="filter-chip" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+        <button class="filter-chip" type="button" data-filter="cpp" aria-pressed="false">C++</button>
+        <button class="filter-chip" type="button" data-filter="database" aria-pressed="false">Database</button>
+      </div>
+      <p class="filter-empty" id="filterEmpty" hidden>No projects match this filter yet.</p>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-tags="cpp database mysql" data-project="school">
+          <div class="project-art art-purple"><span class="art-icon">▦</span><span class="art-label">DATABASE · C++</span></div>
+          <div class="project-info"><div class="project-meta">01 / ACADEMIC PROJECT</div><h3>School Management System</h3><p>A student enrollment and records project focused on organizing student information, sections, sessions, and learning modalities.</p><div class="tag-list"><span>C++</span><span>MySQL</span><span>Database</span></div><button class="text-link" type="button" data-open="school">Project details <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-tags="html javascript" data-project="portfolio">
+          <div class="project-art art-blue"><span class="art-icon">◈</span><span class="art-label">WEB DEVELOPMENT</span></div>
+          <div class="project-info"><div class="project-meta">02 / PERSONAL PROJECT</div><h3>Personal Portfolio</h3><p>A responsive website that introduces me, presents my skills and projects, and provides a way to get in touch.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="text-link" type="button" data-open="portfolio">Project details <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-tags="html" data-project="gaming">
+          <div class="project-art art-pink"><span class="art-icon">✧</span><span class="art-label">WEB DESIGN</span></div>
+          <div class="project-info"><div class="project-meta">03 / CREATIVE PROJECT</div><h3>Gaming Portfolio</h3><p>A themed web portfolio inspired by gaming, created to practice page layout, visual design, and front-end development.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>UI Design</span></div><button class="text-link" type="button" data-open="gaming">Project details <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading"><p class="eyebrow">04 / MY LEARNING JOURNEY</p><h2>Education & <span class="gradient-text">growth.</span></h2></div>
+      <div class="timeline glass-card open">
+        <div class="timeline-marker"></div>
+        <div class="timeline-body">
+          <p class="project-meta">CURRENT STUDIES</p>
+          <h3><button class="timeline-toggle" type="button" aria-expanded="true" aria-controls="edu-1"><span>Bachelor of Science in Information Technology</span><span class="chevron" aria-hidden="true">+</span></button></h3>
+          <p class="timeline-org">ICCT Colleges</p>
+          <div class="timeline-more" id="edu-1"><p class="muted">Building foundational knowledge in programming, web systems, databases, and information technology.</p></div>
+        </div>
+      </div>
+      <div class="timeline glass-card">
+        <div class="timeline-marker"></div>
+        <div class="timeline-body">
+          <p class="project-meta">CERTIFICATION</p>
+          <h3><button class="timeline-toggle" type="button" aria-expanded="false" aria-controls="edu-2"><span>Computer Systems Servicing NC II</span><span class="chevron" aria-hidden="true">+</span></button></h3>
+          <p class="timeline-org">TESDA (Technical Education and Skills Development Authority)</p>
+          <div class="timeline-more" id="edu-2"><p class="muted">National Certificate II covering computer hardware assembly, installation, network configuration, and system maintenance.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-card">
+        <p class="eyebrow">05 / LET'S CONNECT</p>
+        <h2>Have a project<br>in <span class="gradient-text">mind?</span></h2>
+        <p>Feel free to reach out for school collaborations, project discussions, or learning opportunities.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field"><label for="cName">Your name</label><input id="cName" name="name" type="text" autocomplete="name" placeholder="Juan Dela Cruz"><small class="error" id="cNameErr" role="alert"></small></div>
+          <div class="field"><label for="cEmail">Your email</label><input id="cEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com"><small class="error" id="cEmailErr" role="alert"></small></div>
+          <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" name="message" rows="4" maxlength="500" placeholder="Tell me about your project or idea..."></textarea><div class="field-foot"><small class="error" id="cMsgErr" role="alert"></small><small class="counter" id="cCount">0 / 500</small></div></div>
+          <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+        <div class="contact-email"><span id="emailText">calibuyotjeanyrose@gmail.com</span> <button class="copy-btn" id="copyEmail" type="button">Copy email</button></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Close project details">&times;</button>
+      <p class="project-meta" id="modalMeta"></p>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+      <p class="modal-label">Tools &amp; concepts</p>
+      <div class="tag-list" id="modalTags"></div>
+      <a class="button button-primary modal-cta" href="#contact" data-close>Ask me about it <span>↗</span></a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span>JR</span><b>.</b></a><p>Designed & built by Jeany Rose A. Calibuyot</p><p>© <span id="year"></span> All rights reserved.</p></div>
+  </footer>
+</body>
+</html>
